@@ -1,6 +1,6 @@
 # Understanding Alerts
 
-Alerts surface notable market activity on Solana, Robinhood, and TON.
+Signals appear in Alpha Feed for Solana, Robinhood, and TON.
 
 ## Alert Types
 
@@ -9,18 +9,18 @@ Alerts surface notable market activity on Solana, Robinhood, and TON.
 * **WEAK** — lower-priority activity.
 * **REVIVAL** — renewed activity after an earlier alert.
 
-## Alert Information
+## Read a signal
 
-Each alert includes:
+Read all available card information directly in Alpha Feed. Cards do not open a detail view.
 
-* Token and chain details
-* Alert type and time
-* Visible price and performance information
+Click the contract address to copy it. Select a visible platform icon to open that external service.
 
 ## Receive alerts
 
-Alerts appear in Alpha Feed. Telegram and browser notifications may also be available.
+New signals display in-app toasts. When Alpha Feed loads, your browser may request notification permission. Browser notifications appear only after you grant permission.
+
+Open **Account** from the user menu to access Telegram channel links.
 
 ## Check before acting
 
-Always do your own research. Verify the token address and review available liquidity. Consider your risk before trading.
+Verify the token address. Consider your risk before trading.

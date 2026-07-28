@@ -1,14 +1,16 @@
 # Welcome
 
-Blackops Capital helps you follow notable crypto market activity.
+Blackops Capital helps you review crypto market signals and wallet activity.
 
-Use Alpha Feed for alerts and Wallet Analytics for research.
+Use **Alpha Feed** for signals. Use **Wallets** for wallet research.
+
+Subscriber navigation includes **Alpha Feed**, **Wallets**, and **Docs**. Open **Account** from the user menu.
 
 ### Chain coverage
 
-**Currently active:** Solana, Robinhood, and TON.
+**Active:** Solana, Robinhood, and TON.
 
-**Planned for the future:** Base, Ethereum, BSC, and Polymarket.
+**Future plans:** Base, Ethereum, BSC, and Polymarket.
 
 ## User guides
 

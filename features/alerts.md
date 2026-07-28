@@ -1,23 +1,29 @@
 # Alpha Alerts
 
-Alpha Feed shows alerts for notable market activity.
+Alpha Feed shows signals for Solana, Robinhood, and TON.
 
 ## Use Alpha Feed
 
-1. Open **Alpha Feed** from the subscriber area.
-2. Search for a token or browse the latest alerts.
-3. Filter alerts by chain, type, or time.
+1. Open **Alpha Feed** from subscriber navigation.
+2. Search by token name or address.
+3. Filter by chain, timeframe, volume range, or flag status.
+4. Select **HUGE**, **BIG**, **WEAK**, or **REVIVAL** to filter signal types.
+5. Sort by **Most Recent**, **Highest Gains**, **Signal Strength**, **Most Wallets**, or chain volume.
 
-## Review an alert
+## Read signals
 
-Open an alert card to review its visible details. These can include the token, chain, alert type, time, and price or performance information.
+Read all available information directly on each card. Cards do not open, expand, or show a detail page.
 
-Use the alert label to prioritize your review. See [Understanding Alerts](../getting-started/alerts.md) for label meanings.
+Click a contract address to copy it. Select a visible platform icon to open that external service.
 
 ## Review performance
 
-Use **Top Gainers** and available performance information to explore alert outcomes. Treat past performance as information, not a trading recommendation.
+Select **24H**, **72H**, **7D**, or **30D** to set the performance period. **Top Gainers** shows three results by default. Select **Top 10** to show ten.
 
-## Enable notifications
+Use pagination to browse more signals. Check the connection status while using the feed.
 
-Enable Telegram or browser notifications where available. Check your device and browser permissions if notifications do not arrive.
+## Notifications and channels
+
+New signals display in-app toasts. Your browser may request notification permission when Alpha Feed loads. Browser notifications appear only after permission is granted.
+
+Select **Choose channels** to open Telegram channels in **Account**.

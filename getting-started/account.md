@@ -1,21 +1,26 @@
 # Creating an Account
 
-Create your account with an email address and password.
+Create an account with your email address and password.
 
 ## Sign up and subscribe
 
 1. Visit [blackops.capital](https://blackops.capital).
-2. Sign up with your email address and password.
-3. Continue to DePay checkout
+2. Enter your email, password, and password confirmation.
+3. Use a password with at least eight characters.
+4. Select **Continue to Checkout**.
+5. Review your order. Optionally enter a promo code.
+6. Continue to DePay and confirm payment.
 
-Checkout settles in USDC. Supported payment networks are Solana, Base, Arbitrum, Ethereum, Optimism, and Polygon PoS. DePay may convert another supported payer token into USDC.
+Checkout supports Solana, Base, Arbitrum, Ethereum, Optimism, and Polygon. Compatible tokens convert to USDC.
 
 ## Access and renewal
 
-Each confirmed payment adds 30 days of access. Renewals are manual and customer-initiated from **Account**. There are no automatic recurring charges.
+Confirmed payment provides 30 days of access. The subscription does not auto-renew.
 
-An active subscription unlocks Alpha Feed and Wallet Analytics.
+After confirmation, the app opens **Alpha Feed**. Use **Account** for subscription and renewal controls.
 
-## Security and payment support
+## Manage your account
 
-Use a unique password and keep your session private. Review payment terms at [blackops.capital/terms](https://blackops.capital/terms).
+Open **Account** from the user menu. You can access Telegram channel links and change your email or password.
+
+Review payment terms at [blackops.capital/terms](https://blackops.capital/terms).
