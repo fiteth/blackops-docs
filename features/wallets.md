@@ -15,7 +15,7 @@ Select **Clear Filters** to reset filters. Use **Export CSV** to download the cu
 
 ## Open wallet details
 
-Table rows do not open wallet details. Select the wallet address link to open **Wallet Details**.
+Select the wallet address link to open **Wallet Details**.
 
 On **Wallet Details**, you can:
 

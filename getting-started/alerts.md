@@ -11,7 +11,7 @@ Signals appear in Alpha Feed for Solana, Robinhood, and TON.
 
 ## Read a signal
 
-Read all available card information directly in Alpha Feed. Cards do not open a detail view.
+Review the information shown on each alert card in Alpha Feed.
 
 Click the contract address to copy it. Select a visible platform icon to open that external service.
 
