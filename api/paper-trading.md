@@ -1,28 +1,34 @@
-# Paper Trading API
+# Paper Trading
 
 ## GET /api/paper-trading/strategies
+
+{% hint style="warning" %}
+**Admin-only endpoint.** Paper Trading is a restricted research tool.
+{% endhint %}
 
 List all paper trading strategies.
 
 **Example:**
+
 ```bash
-curl -H "X-API-Key: YOUR_KEY" \
+curl -H "Authorization: Bearer ACCESS_TOKEN" \
   "https://api.blackops.capital/api/paper-trading/strategies"
 ```
 
----
+***
 
 ## GET /api/paper-trading/strategies/:id
 
 Get a specific strategy with stats.
 
----
+***
 
 ## POST /api/paper-trading/strategies
 
 Create a new strategy.
 
 **Request Body:**
+
 ```json
 {
   "name": "Conservative HUGE",
@@ -39,13 +45,13 @@ Create a new strategy.
 }
 ```
 
----
+***
 
 ## DELETE /api/paper-trading/strategies/:id
 
 Delete a strategy.
 
----
+***
 
 ## GET /api/paper-trading/positions
 
@@ -53,12 +59,12 @@ List positions.
 
 **Query Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter    | Type   | Description        |
+| ------------ | ------ | ------------------ |
 | `strategyId` | string | Filter by strategy |
-| `status` | string | `OPEN` or `CLOSED` |
+| `status`     | string | `OPEN` or `CLOSED` |
 
----
+***
 
 ## GET /api/paper-trading/stats
 

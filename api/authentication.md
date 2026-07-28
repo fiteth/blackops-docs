@@ -1,48 +1,26 @@
 # Authentication
 
-All API requests require authentication via API key.
+Protected routes require a signed-in session with a valid Bearer access token. Subscriber routes also require an active subscription. Admins bypass the subscription gate.
 
-## Getting Your API Key
+## Using an access token
 
-1. Log into [blackops.capital](https://blackops.capital)
-2. Go to Account Settings
-3. Copy your API key
+The browser application obtains access and refresh tokens through its login and signup flows. No customer API key exists.
 
-## Using Your API Key
-
-Add the `X-API-Key` header to all requests:
+Send the access token in the `Authorization` header:
 
 ```bash
-curl -H "X-API-Key: YOUR_API_KEY" https://api.blackops.capital/api/signals
+curl -H "Authorization: Bearer ACCESS_TOKEN" https://api.blackops.capital/api/signals
 ```
 
 ## Example Request
 
 ```bash
-curl -H "X-API-Key: YOUR_API_KEY" \
+curl -H "Authorization: Bearer ACCESS_TOKEN" \
   "https://api.blackops.capital/api/signals?signalTypes=HUGE,BIG&limit=10"
-```
-
-## Response Format
-
-All responses return JSON:
-
-**Success:**
-```json
-{
-  "success": true,
-  "data": { ... }
-}
-```
-
-**Error:**
-```json
-{
-  "success": false,
-  "error": "Error message"
-}
 ```
 
 ## Rate Limits
 
-No rate limits currently enforced. Please be reasonable.
+The general limit is 100 requests per minute.
+
+Credential-entry endpoints allow 10 failed attempts per 15 minutes. Successful attempts do not consume this failure budget.

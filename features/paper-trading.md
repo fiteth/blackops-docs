@@ -1,24 +1,28 @@
 # Paper Trading
 
-Simulate trades with real signals without risking capital.
+{% hint style="warning" %}
+**Admin-only research tool.** Paper Trading is not a subscriber feature.
+{% endhint %}
+
+Simulate trades with signals without risking capital.
 
 ## How It Works
 
-Create strategies that automatically "trade" when alerts fire. Track performance without real money.
+Research strategies can simulate trades when alerts fire. Track modeled performance without real money.
 
 ## Creating a Strategy
 
 Define your strategy with:
 
-- **Name** - Identify your strategy
-- **Signal types** - Which alerts to trade (HUGE, BIG, WEAK)
-- **Position size** - SOL amount per trade
-- **Initial stop loss** - When to cut losses (e.g., -50%)
-- **Take profit levels** - Up to 5 TP levels with:
-  - Target percentage gain
-  - Percentage of position to sell
-  - Optional: new stop loss after TP hit
-  - Optional: activate trailing stop
+* **Name** - Identify your strategy
+* **Signal types** - Which alerts to trade (HUGE, BIG, WEAK, REVIVAL)
+* **Position size** - SOL amount per trade
+* **Initial stop loss** - When to cut losses (e.g., -50%)
+* **Take profit levels** - Up to 5 TP levels with:
+  * Target percentage gain
+  * Percentage of position to sell
+  * Optional: new stop loss after TP hit
+  * Optional: activate trailing stop
 
 ## Example Strategy
 
@@ -37,19 +41,19 @@ TP4: +500% → sell remaining
 
 View for each strategy:
 
-- Open and closed positions
-- Total realized P&L
-- Win rate
-- Individual trade executions
-- Entry/exit prices and timing
+* Open and closed positions
+* Total realized P\&L
+* Win rate
+* Individual trade executions
+* Entry/exit prices and timing
 
 ## Positions
 
 Each position tracks:
 
-- Entry price and timestamp
-- Current price (live updated)
-- Remaining position percentage
-- Stop loss status
-- Trailing stop (if activated)
-- All executions (TP hits, stop outs)
+* Entry price and timestamp
+* Current price (live updated)
+* Remaining position percentage
+* Stop loss status
+* Trailing stop (if activated)
+* All executions (TP hits, stop outs)

@@ -1,22 +1,23 @@
 # Creating an Account
 
-Blackops Capital is currently invite-only.
+Create an account with your email and a password of at least eight characters.
 
-## Getting Access
+## Sign up and subscribe
 
 1. Visit [blackops.capital](https://blackops.capital)
-2. Request early access or enter your invite code
-3. Create your account with email and password
+2. Sign up with your email and password
+3. Continue to DePay checkout
 
-## After Sign Up
+Checkout settles in USDC. Supported payment networks are Solana, Base, Arbitrum, Ethereum, Optimism, and Polygon PoS. DePay may convert another supported payer token into USDC.
 
-Once logged in, you'll have access to:
+## Access and renewal
 
-- The dashboard with live alerts
-- Wallet analytics
-- Backtesting tools
-- Your API key (found in account settings)
+Each confirmed payment adds 30 days of access. Renewals are manual and customer-initiated from **Account**. There are no automatic recurring charges.
 
-## API Key
+An active subscription and signed-in session unlock subscriber data. Admins bypass the subscription requirement.
 
-Your API key lets you access data programmatically. Find it in your account settings. See the [API documentation](../api/authentication.md) for usage.
+## Security and payment support
+
+Use a unique password and keep your session private. Review payment terms at [blackops.capital/terms](https://blackops.capital/terms).
+
+For protected API requests, use a Bearer access token. See [Authentication](../api/authentication.md).

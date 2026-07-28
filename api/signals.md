@@ -1,84 +1,63 @@
-# Signals API
+# Signals
 
 ## GET /api/signals
 
 Get alpha alerts.
 
+This protected subscriber route requires `Authorization: Bearer ACCESS_TOKEN`.
+
 **Query Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `signalTypes` | string | Comma-separated: `HUGE`, `BIG`, `WEAK` |
-| `hours` | number | Signals from last N hours (default: 720) |
-| `limit` | number | Max results (default: 50) |
-| `offset` | number | Pagination offset |
-| `sort` | string | Sort by: `timestamp`, `maxGainPercent`, `walletCount` |
-| `order` | string | `asc` or `desc` |
+| Parameter     | Type   | Description                                                                                           |
+| ------------- | ------ | ----------------------------------------------------------------------------------------------------- |
+| `signalTypes` | string | Comma-separated: `HUGE`, `BIG`, `WEAK`, `REVIVAL`                                                     |
+| `chain`       | string | `SOL`, `TON`, or `ROBINHOOD`                                                                          |
+| `search`      | string | Optional search term                                                                                  |
+| `hours`       | number | Signals from the last N hours; omit for all-time                                                      |
+| `limit`       | number | Results per page; default `50`, maximum `200`                                                         |
+| `offset`      | number | Pagination offset                                                                                     |
+| `sort`        | string | `timestamp`, `maxGainPercent`, `confidence`, `walletCount`, `currentGainPercent`, or `totalSolVolume` |
+| `order`       | string | `asc` or `desc`                                                                                       |
+
+The feed also supports its documented volume, flag, and deduplication filters. Policy-invalidated rows are excluded.
 
 **Example:**
+
 ```bash
-curl -H "X-API-Key: YOUR_KEY" \
+curl -H "Authorization: Bearer ACCESS_TOKEN" \
   "https://api.blackops.capital/api/signals?signalTypes=HUGE,BIG&limit=10"
 ```
-
-**Response:**
-```json
-{
-  "signals": [
-    {
-      "id": "...",
-      "token": "TokenMintAddress",
-      "tokenSymbol": "SYMBOL",
-      "signalType": "HUGE",
-      "walletCount": 3,
-      "timestamp": "2026-02-18T10:00:00.000Z",
-      "entryPriceUsd": 0.0001,
-      "currentPriceUsd": 0.0005,
-      "athPriceUsd": 0.001,
-      "currentGainPercent": 400,
-      "maxGainPercent": 900,
-      "entryMarketCapUsd": 100000,
-      "marketCapUsd": 500000
-    }
-  ],
-  "pagination": {
-    "total": 855,
-    "limit": 10,
-    "offset": 0,
-    "hasMore": true
-  }
-}
-```
-
----
 
 ## GET /api/signals/performance
 
 Get signal performance statistics.
 
+Results deduplicate by chain and token for the selected filters.
+
 **Query Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter     | Type   | Description            |
+| ------------- | ------ | ---------------------- |
 | `signalTypes` | string | Filter by signal types |
-| `hours` | number | Time range in hours |
+| `hours`       | number | Time range in hours    |
 
 **Example:**
+
 ```bash
-curl -H "X-API-Key: YOUR_KEY" \
+curl -H "Authorization: Bearer ACCESS_TOKEN" \
   "https://api.blackops.capital/api/signals/performance?signalTypes=HUGE,BIG"
 ```
 
----
+***
 
-## GET /api/signals/transactions
+## GET /api/public/top-alerts
 
-Get recent transactions from tracked wallets.
+Get up to 10 unique top-performing coins. This endpoint is public.
 
 **Query Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `limit` | number | Max results |
-| `wallet` | string | Filter by wallet address |
-| `token` | string | Filter by token address |
+| Parameter     | Type   | Description                      |
+| ------------- | ------ | -------------------------------- |
+| `chain`       | string | `SOL`, `TON`, or `ROBINHOOD`     |
+| `signalTypes` | string | Comma-separated signal types     |
+| `hours`       | number | Default 30 days; maximum 90 days |

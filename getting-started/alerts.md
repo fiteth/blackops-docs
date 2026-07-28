@@ -1,34 +1,49 @@
 # Understanding Alerts
 
-Alerts notify you of potential opportunities based on on-chain activity.
+Alerts identify correlated smart-wallet buys on Solana, TON, and Robinhood Chain.
+
+The engine groups eligible buys of one token in a rolling 30-minute window. It requires at least two wallets and applies chain-specific score and volume gates.
 
 ## Alert Types
 
-| Type | Description |
-|------|-------------|
-| **HUGE** | Highest confidence |
-| **BIG** | Strong confidence |
-| **WEAK** | Standard confidence |
+| Type        | Timing after correlation                              |
+| ----------- | ----------------------------------------------------- |
+| **HUGE**    | Within 1 minute                                       |
+| **BIG**     | Within 10 minutes                                     |
+| **WEAK**    | Within 30 minutes                                     |
+| **REVIVAL** | A token alerted over 24 hours earlier qualifies again |
+
+These are timing categories, not confidence labels.
+
+### Trigger gates
+
+| Chain     | Wallets | Combined score | Combined buys |
+| --------- | ------: | -------------: | ------------: |
+| SOL       |      2+ |            80+ |         $150+ |
+| TON       |      2+ |           100+ |         $100+ |
+| Robinhood |      2+ |           160+ |    No minimum |
 
 ## Alert Information
 
 Each alert includes:
 
-- Token address and symbol
-- Entry price and market cap
-- Current price and gain percentage
-- All-time high since alert
-- Additional metrics
+* A summary of smart wallets, score, and buy window
+* Entry price and market cap
+* Current price and gain percentage
+* All-time high since alert
+
+The summary states that X smart wallets, with combined score Y, bought within Z minutes. Alert cards do not provide wallet addresses or individual wallet buys.
 
 ## Filtering Alerts
 
 Use the dashboard filters to focus on:
 
-- Specific alert types
-- Time ranges
-- Minimum/maximum gains
-- Market cap ranges
+* Chain, signal type, and performance period
+* Search, sorting, pagination, and flagged status
+* Performance and Top Gainers views
 
 ## Real-Time Updates
 
-Alerts update in real-time. Price tracking continues for active signals so you can monitor performance.
+Signals appear in Alpha Feed through a live connection. They can also reach chain-and-strength Telegram destinations and browser notifications.
+
+Signals are continuously repriced. They retain entry, current, and ATH performance. Performance views deduplicate each chain and token within their selected period.

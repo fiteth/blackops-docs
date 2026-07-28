@@ -1,6 +1,10 @@
-# Backtesting API
+# Backtesting
 
 ## POST /api/backtesting/simulate
+
+{% hint style="warning" %}
+**Admin-only endpoint.** Backtesting is a restricted research tool.
+{% endhint %}
 
 Run a backtest simulation.
 
@@ -25,12 +29,13 @@ Run a backtest simulation.
 ```
 
 **Response:**
+
 ```json
 {
   "summary": {
     "totalTokens": 150,
     "totalWallets": 45,
-    "walletsMeetingCriteria": 200,
+    "walletsMeetingCriteria": 20,
     "totalRugs": 15,
     "rugRate": 0.1,
     "avgMaxGain": 45.5,
@@ -46,26 +51,28 @@ Run a backtest simulation.
 }
 ```
 
----
+***
 
 ## GET /api/backtesting/stats
 
 Get statistics about available backtesting data.
 
 **Example:**
+
 ```bash
-curl -H "X-API-Key: YOUR_KEY" \
+curl -H "Authorization: Bearer ACCESS_TOKEN" \
   "https://api.blackops.capital/api/backtesting/stats"
 ```
 
----
+***
 
 ## GET /api/backtesting/correlations
 
 Get correlation analysis between wallet metrics and outcomes.
 
 **Example:**
+
 ```bash
-curl -H "X-API-Key: YOUR_KEY" \
+curl -H "Authorization: Bearer ACCESS_TOKEN" \
   "https://api.blackops.capital/api/backtesting/correlations"
 ```
