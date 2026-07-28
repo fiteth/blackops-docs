@@ -1,6 +1,6 @@
 # Wallet Analytics
 
-Wallet Analytics is a subscriber feature for researching tracked wallets.
+Wallet Analytics is a subscriber feature for researching tracked wallets on Solana, Robinhood, and TON.
 
 Metrics are estimates based on available attribution and chain-provider data. They are not absolute wallet-performance records.
 

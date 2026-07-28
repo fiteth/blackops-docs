@@ -1,16 +1,16 @@
 # Alpha Alerts
 
-Alpha Alerts report correlated smart-wallet buys on SOL, TON, and Robinhood Chain.
+Alpha Alerts report correlated smart-wallet buys on Solana, Robinhood, and TON.
 
 ## How It Works
 
-The system monitors a wallet subset refreshed hourly. It uses Helius for SOL, TonAPI for TON, and Alchemy for Robinhood Chain.
+The system monitors a selected wallet subset for live activity.
 
 Eligible buys of one token are grouped for 30 minutes. A signal needs at least two wallets and its chain's score and volume gates.
 
 HUGE means correlation occurred within one minute. BIG means within 10 minutes. WEAK means within 30 minutes. REVIVAL means the token alerted over 24 hours earlier and qualified again.
 
-Created signals are persisted, enriched with token metadata, and emitted through Socket.IO as `new-signal` events to Alpha Feed. Their prices update continuously.
+Signals appear in Alpha Feed with token metadata. Their prices update continuously.
 
 ## Alert Dashboard
 

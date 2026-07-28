@@ -2,9 +2,13 @@
 
 Blackops Capital is a crypto market-intelligence and alerting platform.
 
-It correlates smart-wallet buys on Solana, TON, and Robinhood Chain. Alerts are delivered through Alpha Feed, Telegram, and browser notifications.
+It correlates smart-wallet buys on Solana, Robinhood, and TON. Alerts are delivered through Alpha Feed, Telegram, and browser notifications.
 
-Historical discovery and scoring use Dune batch data and cached results. A selected wallet subset refreshes hourly for live monitoring.
+### Chain coverage
+
+**Currently active:** Solana, Robinhood, and TON.
+
+**Planned for the future:** Base, Ethereum, BSC, and Polymarket.
 
 ## Documentation
 
@@ -18,14 +22,6 @@ Historical discovery and scoring use Dune batch data and cached results. A selec
 
 * [Alpha Alerts](features/alerts.md)
 * [Wallet Analytics](features/wallets.md)
-* [Backtesting — Admin research tool](features/backtesting.md)
-* [Paper Trading — Admin research tool](features/paper-trading.md)
-
-### API Reference
-
-* [Authentication](api/authentication.md)
-* [Signals](api/signals.md)
-* [Wallets](api/wallets.md)
 
 ## Support
 

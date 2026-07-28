@@ -1,6 +1,6 @@
 # Understanding Alerts
 
-Alerts identify correlated smart-wallet buys on Solana, TON, and Robinhood Chain.
+Alerts identify correlated smart-wallet buys on Solana, Robinhood, and TON.
 
 The engine groups eligible buys of one token in a rolling 30-minute window. It requires at least two wallets and applies chain-specific score and volume gates.
 
@@ -19,7 +19,7 @@ These are timing categories, not confidence labels.
 
 | Chain     | Wallets | Combined score | Combined buys |
 | --------- | ------: | -------------: | ------------: |
-| SOL       |      2+ |            80+ |         $150+ |
+| Solana    |      2+ |            80+ |         $150+ |
 | TON       |      2+ |           100+ |         $100+ |
 | Robinhood |      2+ |           160+ |    No minimum |
 

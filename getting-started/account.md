@@ -14,10 +14,8 @@ Checkout settles in USDC. Supported payment networks are Solana, Base, Arbitrum,
 
 Each confirmed payment adds 30 days of access. Renewals are manual and customer-initiated from **Account**. There are no automatic recurring charges.
 
-An active subscription and signed-in session unlock subscriber data. Admins bypass the subscription requirement.
+An active subscription unlocks Alpha Feed and Wallet Analytics.
 
 ## Security and payment support
 
 Use a unique password and keep your session private. Review payment terms at [blackops.capital/terms](https://blackops.capital/terms).
-
-For protected API requests, use a Bearer access token. See [Authentication](../api/authentication.md).
