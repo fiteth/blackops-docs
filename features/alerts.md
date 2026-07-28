@@ -1,37 +1,23 @@
 # Alpha Alerts
 
-Alpha Alerts report correlated smart-wallet buys on Solana, Robinhood, and TON.
+Alpha Feed shows alerts for notable market activity.
 
-## How It Works
+## Use Alpha Feed
 
-The system monitors a selected wallet subset for live activity.
+1. Open **Alpha Feed** from the subscriber area.
+2. Search for a token or browse the latest alerts.
+3. Filter alerts by chain, type, or time.
 
-Eligible buys of one token are grouped for 30 minutes. A signal needs at least two wallets and its chain's score and volume gates.
+## Review an alert
 
-HUGE means correlation occurred within one minute. BIG means within 10 minutes. WEAK means within 30 minutes. REVIVAL means the token alerted over 24 hours earlier and qualified again.
+Open an alert card to review its visible details. These can include the token, chain, alert type, time, and price or performance information.
 
-Signals appear in Alpha Feed with token metadata. Their prices update continuously.
+Use the alert label to prioritize your review. See [Understanding Alerts](../getting-started/alerts.md) for label meanings.
 
-## Alert Dashboard
+## Review performance
 
-The dashboard shows:
+Use **Top Gainers** and available performance information to explore alert outcomes. Treat past performance as information, not a trading recommendation.
 
-* Live alerts as they happen
-* Historical alerts with performance data
-* Chain, type, search, flagged-status, and period filters
-* Pagination, sorting, and live connection status
+## Enable notifications
 
-## Performance Tracking
-
-Every alert tracks:
-
-* Entry price at time of alert
-* Current price (updated live)
-* All-time high since alert
-* Percentage gains
-
-Performance counts deduplicate chain and token within the chosen period. Top Gainers uses the highest-gain alert and lists up to 10 unique coins.
-
-## Telegram Alerts
-
-Signals are emitted to Alpha Feed and sent to their chain-and-strength Telegram destination. Browser notifications are also supported.
+Enable Telegram or browser notifications where available. Check your device and browser permissions if notifications do not arrive.

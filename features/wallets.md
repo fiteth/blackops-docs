@@ -1,57 +1,23 @@
 # Wallet Analytics
 
-Wallet Analytics is a subscriber feature for researching tracked wallets on Solana, Robinhood, and TON.
+Wallet Analytics helps subscribers research tracked wallets on Solana, Robinhood, and TON.
 
-Metrics are estimates based on available attribution and chain-provider data. They are not absolute wallet-performance records.
+Metrics are estimates. They are not absolute wallet-performance records.
 
-## Wallet Database
+## Browse wallets
 
-Browse tracked wallets with performance, risk, and activity filters.
+Browse tracked wallets, then filter or sort the list by visible performance, risk, and activity metrics.
 
-## Performance Metrics
+## Review a wallet
 
-**Gain Metrics:**
+Open a wallet to review its available metrics and token history. Use these details to support your own research.
 
-* Average gain
-* Median gain
-* Moon rate (% of trades hitting big multipliers)
-* Realized ROI
-* Realized average/median gain
+## Use the available information
 
-**Multiplier Counts:**
+Wallet pages can show:
 
-* 5x, 10x, 20x, 50x, 100x, 500x, 1000x trade counts
+* Performance metrics
+* Risk and activity metrics
+* Token-by-token history
 
-**Risk Metrics:**
-
-* Win rate
-* Failure rate
-* Rug rate (% of trades in rugged tokens)
-* Rug count
-* Concentration ratio
-
-**Activity:**
-
-* Total coins traded
-* Last trade date
-* Total bought/sold USD
-* Realized profit
-
-## Smart Filtering
-
-Filter out noise with powerful controls:
-
-* **Exclude copytraders** - Remove bot/copy trading wallets
-* **Exclude rug traders** - Filter out wallets that profit from rugs
-* **Rug rate filters** - Set maximum acceptable rug exposure
-* **Activity filters** - Coin count and recent activity
-
-## Wallet Details
-
-Click any wallet to see:
-
-* Complete token-by-token trading history
-* Entry timestamps and market caps
-* Realized vs unrealized positions
-* Hold duration for each trade
-* Position status (exited, holding, partial)
+Review each wallet and token independently before making a decision.

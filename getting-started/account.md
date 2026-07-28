@@ -1,11 +1,11 @@
 # Creating an Account
 
-Create an account with your email and a password of at least eight characters.
+Create your account with an email address and password.
 
 ## Sign up and subscribe
 
-1. Visit [blackops.capital](https://blackops.capital)
-2. Sign up with your email and password
+1. Visit [blackops.capital](https://blackops.capital).
+2. Sign up with your email address and password.
 3. Continue to DePay checkout
 
 Checkout settles in USDC. Supported payment networks are Solana, Base, Arbitrum, Ethereum, Optimism, and Polygon PoS. DePay may convert another supported payer token into USDC.

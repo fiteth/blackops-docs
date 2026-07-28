@@ -1,22 +1,12 @@
 # Introduction
 
-Blackops Capital is a crypto market-intelligence and alerting platform.
+Blackops Capital has two subscriber areas:
 
-It identifies correlated smart-wallet buys and delivers timely market alerts.
+* **Alpha Feed** surfaces notable market activity through alerts.
+* **Wallet Analytics** helps you research tracked wallet activity and metrics.
 
-### Chain coverage
-
-**Currently active:** Solana, Robinhood, and TON.
-
-**Planned for the future:** Base, Ethereum, BSC, and Polymarket.
-
-## What You Get
-
-* **Alpha Alerts** for correlated smart-wallet buys
-* **Wallet Analytics** for subscriber research
-
-## Next Steps
+## Get started
 
 1. [Create your account](account.md)
-2. [Understand alerts](alerts.md)
-3. [Explore Wallet Analytics](../features/wallets.md)
+2. Open Alpha Feed and review the [alert labels](alerts.md).
+3. Use [Wallet Analytics](../features/wallets.md) for further research.

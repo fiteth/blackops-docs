@@ -1,8 +1,8 @@
 # Welcome
 
-Blackops Capital is a crypto market-intelligence and alerting platform.
+Blackops Capital helps you follow notable crypto market activity.
 
-It correlates smart-wallet buys on Solana, Robinhood, and TON. Alerts are delivered through Alpha Feed, Telegram, and browser notifications.
+Use Alpha Feed for alerts and Wallet Analytics for research.
 
 ### Chain coverage
 
@@ -10,7 +10,7 @@ It correlates smart-wallet buys on Solana, Robinhood, and TON. Alerts are delive
 
 **Planned for the future:** Base, Ethereum, BSC, and Polymarket.
 
-## Documentation
+## User guides
 
 ### Getting Started
 
